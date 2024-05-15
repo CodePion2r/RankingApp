@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ja5v4Q64UyrEMZy2L6tzX1uIVgsuD98ZigEFwucBuspGznf2JL0TD1egyhoqlGTc1xTTH95qMJXZEf/1+sBakQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Timofey\\source\\repos\\RankingApp\\RankingApp\\RankingApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Timofey\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Timofey\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Timofey\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\Timofey\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\Timofey\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\Timofey\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

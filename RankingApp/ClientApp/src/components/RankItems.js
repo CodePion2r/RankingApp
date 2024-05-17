@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect } from 'react';
 import MovieImageArr from './MovieImages';
 import RankingGrid from './RankingGrid';
+import ItemCollection from './ItemCollection';
 
 const RankItems = () => {
     const [items, setItems] = useState([]);
@@ -27,32 +28,22 @@ const RankItems = () => {
             setItems(transformedCollection);
         }
 
-    useEffect(() => {
-        fetch(`item/${dataType}`)
-            .then((results) => {
-                return results.json();
-            })
-            .then(data => { 
-                setItems(data);
-            })
-    },[]);
+        useEffect(() => {
+            fetch(`item/${dataType}`)
+                .then((results) => {
+                    return results.json();
+                })
+                .then(data => {
+                    setItems(data);
+                })
+        }, []);
 
-    return (
-        <main>
-            <RankingGrid items={items} imgArr={imgArr} drag={drag} allowDrop={allowDrop} drop={drop} />
-            <div className = "items-not-ranked">
-            {
-                    (items.length > 0) ? items.map((item) =>
-                    <div className = "unranked-cell">
-                            <img id={`item-${item.id}`} src={MovieImageArr.find(o => o.id === item.imageId)?.image} 
-                                style={{ cursor: "pointer" }} draggaable="true" onDragStart={drag}
-                            />
-                    </div>
-                    ) : <div>Loading...</div>
-            }
-            </div>
-        </main>
-
-
+        return (
+            (items != null) ?
+                <main>
+                    <RankingGrid items={items} imgArr={imgArr} drag={drag} allowDrop={allowDrop} drop={drop} />
+                    <ItemCollection items={items} drag={drag} imgArr={imgArr} />
+                </main> : <main>Loading...</main>
         )
+    }
 }
